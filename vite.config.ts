@@ -20,6 +20,6 @@ export default defineConfig({
         }
       }
     },
-    cssCodeSplit: false
+    cssCodeSplit: true
   }
 })
