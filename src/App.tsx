@@ -1,4 +1,4 @@
-import { FlipClock } from "./index";
+import { FlipClock } from "./";
 import "./App.css";
 
 const App = () => {
