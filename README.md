@@ -19,6 +19,7 @@ npm install react-flip-timer
 
 ```tsx
 import { FlipClock } from 'react-flip-timer';
+import "react-flip-timer/dist/index.css";
 
 // 基础时钟
 const BasicClock = () => <FlipClock />;

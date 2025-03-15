@@ -4,12 +4,15 @@ import dts from 'vite-plugin-dts'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), dts()],
+  plugins: [react(), dts({ 
+    include: ['src'],
+    rollupTypes: true 
+  })],
   build: {
     lib: {
       entry: 'src/index.ts',
       formats: ['es', 'cjs'],
-      fileName: (format) => `index.${format}.js`
+      fileName: (format) => `index.${format === 'es' ? 'mjs' : 'js'}`
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
@@ -20,6 +23,6 @@ export default defineConfig({
         }
       }
     },
-    cssCodeSplit: true
+    cssCodeSplit: false
   }
 })

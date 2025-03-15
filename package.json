@@ -1,6 +1,6 @@
 {
   "name": "react-flip-timer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publishConfig": {
     "access": "public"
   },
@@ -9,7 +9,6 @@
   "module": "dist/index.mjs",
   "unpkg": "dist/index.umd.js",
   "types": "dist/index.d.ts",
-  "style": "dist/index.css",
   "files": [
     "dist",
     "src/types"
@@ -52,9 +51,6 @@
     "url": "https://github.com/tugitee/react-flip-timer/issues"
   },
   "homepage": "https://github.com/tugitee/react-flip-timer#readme",
-  "dependencies": {
-    "react-flip-timer": "^0.0.2"
-  },
   "sideEffects": [
     "*.css",
     "*.scss"
