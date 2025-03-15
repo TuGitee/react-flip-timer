@@ -1,4 +1,4 @@
-import FlipClock from "./components/FlipClock";
+import { FlipClock } from "./index";
 import "./App.css";
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
 				continueAfterDeadline={true}
 				formatter="YYYY/MM/dd|hh:mm:ss"
 				separator="|"
-        size="120"
+				size="120"
 				ratio={0.6}
 				title={"当前时间"}
 			/>

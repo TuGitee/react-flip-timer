@@ -1,6 +1,6 @@
 {
   "name": "react-flip-timer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -10,13 +10,15 @@
   "unpkg": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src/types"
   ],
   "scripts": {
     "dev": "vite",
     "build:types": "tsc --emitDeclarationOnly",
     "build:vite": "vite build",
     "build": "npm run build:types && npm run build:vite",
+    "prepare": "npm run build",
     "publish": "npm run build && git add . && git commit -m \"chore: release v%npm_package_version%\" && git tag v%npm_package_version% && git push -u origin main && git push --tags && npm publish"
   },
   "keywords": [
@@ -47,5 +49,8 @@
   "bugs": {
     "url": "https://github.com/tugitee/react-flip-timer/issues"
   },
-  "homepage": "https://github.com/tugitee/react-flip-timer#readme"
+  "homepage": "https://github.com/tugitee/react-flip-timer#readme",
+  "dependencies": {
+    "react-flip-timer": "^0.0.2"
+  }
 }
