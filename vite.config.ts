@@ -10,8 +10,8 @@ export default defineConfig({
     include: ['src'],
     rollupTypes: true
   })],
-  build: {
-    lib: isWeb ? undefined : {
+  build: isWeb ? undefined : {
+    lib: {
       entry: 'src/index.ts',
       formats: ['es', 'cjs'],
       fileName: (format) => `index.${format}.js`
